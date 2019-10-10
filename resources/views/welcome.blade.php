@@ -75,32 +75,14 @@
                         <a href="{{ route('register') }}">Register</a>
                     @endauth
                 </div>
-            @endif
-
-            
-            
-            
-            
-            
+            @endif    
             <div class="content">
                 <div class="title m-b-md">
                     <div>
-                        <h2>Teste com rotas:</h2>
-                        <form action="/user" method="post">
-                            {{ csrf_field() }}
-                            <input type="text" name="nome" placeholder="Nome com POST">
-                            <button>Enviar</button>
-                        </form>
-                    </div>                    
+                        Laravel
+                    </div>               
                 </div>
-
-                <div class="links">
-                    <a href="https://laravel.com/docs">Documentation</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
-                </div>
+                <h3><a href="{{ route('produtos.index') }}">Lista de produto</a></h3>
             </div>
         </div>
     </body>
